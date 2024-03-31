@@ -2,6 +2,8 @@ import Header from "@/components/Header"
 import Card from "@/components/Card";
 import Revenue from "@/components/Revenue";
 import TopProducts from "@/components/TopProducts";
+import ProductStatus from "@/components/ProductStatus";
+import RecentOrder from "@/components/RecentOrder";
 
 
 export default function HomePage() {
@@ -19,6 +21,10 @@ export default function HomePage() {
      <section className="flex space-x-5 mt-5">
       <Revenue />
       <TopProducts />
+     </section>
+     <section className="flex space-x-5 mt-5">
+      <ProductStatus />
+      <RecentOrder />
      </section>
     </main>
 

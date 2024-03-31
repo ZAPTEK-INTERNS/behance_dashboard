@@ -118,3 +118,45 @@ export const topProducts = [
     id: "alidnoafjadifo",
   },
 ]
+
+export const donutGraphData = [
+  { name: 'Delivered', value: 400, color: 'teal.5' },
+  { name: 'Pending', value: 300, color: 'yellow.5' },
+  { name: 'Canceled', value: 100, color: 'red.5' },
+];
+
+
+export const ordersTableData = [
+  {
+    orderNo: "#4254B2",
+    date: "05/09/2022",
+    name: "Wade Warren",
+    price: 523,
+    id: "alidnoafjadifo",
+    status: "pending",
+  },
+  {
+    orderNo: "#4254B2",
+    date: "05/09/2022",
+    name: "Wade Warren",
+    price: 523,
+    id: "alidnoafjadifo",
+    status: "pending",
+  },
+  {
+    orderNo: "#4254B2",
+    date: "05/09/2022",
+    name: "Wade Warren",
+    price: 523,
+    id: "alidnoafjadifo",
+    status: "pending",
+  },
+  {
+    orderNo: "#4254B2",
+    date: "05/09/2022",
+    name: "Wade Warren",
+    price: 523,
+    id: "alidnoafjadifo",
+    status: "pending",
+  },
+]
