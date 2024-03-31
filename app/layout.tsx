@@ -30,7 +30,7 @@ export default function RootLayout({
       <head>
         <ColorSchemeScript />
       </head>
-      <body className={mulish.className}>
+      <body className={`${mulish.className} bg-[#F5F6FA]`}>
        <MantineProvider>
         <AppShell
           // header={{ height: 60}}

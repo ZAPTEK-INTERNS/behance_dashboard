@@ -1,4 +1,5 @@
 import { links } from "@/lib/data"
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Sidebar() {
@@ -12,12 +13,12 @@ export default function Sidebar() {
       </h1>
       <ul className="mt-5 lg:mt-10 w-[88%] mx-auto">
         {links.map(link => (
-          <li key={link.title} className={`flex items-center gap-2 py-2 px-3 rounded-md z-10
-          mb-3 
+          <Link href={`${link.path}`} key={link.title} className={`flex items-center gap-2 py-2 px-3
+          rounded-md z-10 mb-3 cursor-pointer
           ${pathname === link.path ? "bg-[#007AFF] text-white shadow-lg" : "text-[#818891]"}`}>
             <span>{link.icon}</span>
-            <p className="text-sm">{link.title}</p>
-          </li>
+            <p className="text-sm font-bold">{link.title}</p>
+          </Link>
         ))}
       </ul>
     </aside>

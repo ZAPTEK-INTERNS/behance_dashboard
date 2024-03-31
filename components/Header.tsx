@@ -32,22 +32,22 @@ export default function Header() {
         <Input
           size="sm"
           placeholder="Search for..."
-          className="bg-white border-none shadow-md"
+          className="bg-white border-none shadow-md outline-none"
           leftSection={<FiSearch size={18} />}
           name="search"
           onChange={handleSearch}
         />
         <button type="submit" hidden>Submit</button>
       </div>
-      <section className="flex gap-2 items-center shadow-md">
-        <div>
-          <Paper shadow="xs" p="sm" className="relative">
+      <section className="flex gap-2 items-center">
+        <div className="shadow-md cursor-pointer">
+          <Paper shadow="xs" className="relative p-[10px]">
            <IoNotificationsOutline className="text-[#818891]" />
            <div className="w-1 h-1 bg-red-500 rounded-full absolute top-[14px] right-[14px]" />
           </Paper>
         </div>
-        <div>
-          <Paper shadow="xs" pr="sm" className="p-[5px] flex items-center">
+        <div className="shadow-md cursor-pointer">
+          <Paper shadow="xs" pr="sm" className="flex items-center py-1 pl-1">
            <Image
             src="/user.png"
             alt="user image"
