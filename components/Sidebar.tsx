@@ -3,10 +3,9 @@ import { usePathname } from "next/navigation";
 
 export default function Sidebar() {
   const pathname = usePathname()
-  console.log(pathname)
 
   return (
-    <aside className="bg-white h-full w-full overflow-hidden"> 
+    <aside className="bg-white h-full w-full overflow-hidden shadow-md"> 
       <h1 className="text-[#007AFF] text-2xl font-extrabold text-center
       mt-3">
         Big <span className="text-[#24CCB8]">Bazzar</span>

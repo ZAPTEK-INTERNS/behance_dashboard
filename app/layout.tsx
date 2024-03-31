@@ -40,7 +40,8 @@ export default function RootLayout({
             collapsed: { mobile: !opened },
           }}
         >
-            <AppShell.Navbar>
+            <AppShell.Navbar
+            withBorder={false}>
             <Sidebar />
             </AppShell.Navbar>
 
